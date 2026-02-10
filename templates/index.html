@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hospital Admission Prediction Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>🏥 Hospital Admission Prediction</h1>
+        <p>Forecast for the next 7 days</p>
+    </header>
+
+    <div class="dashboard-container">
+        <div class="cards">
+            <div class="card" id="prediction-card">
+                <h3>Predicted Admissions</h3>
+                <ul id="prediction-list"></ul>
+            </div>
+            <div class="card" id="confidence-card">
+                <h3>Model Confidence</h3>
+                <ul id="confidence-list"></ul>
+            </div>
+        </div>
+
+        <div id="chart"></div>
+        <button class="refresh-btn" onclick="refreshDashboard()">Refresh Predictions</button>
+        <p id="last-updated"></p>
+    </div>
+
+    <footer>
+        <p>Hospital Dashboard &copy; 2026</p>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
